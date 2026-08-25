@@ -1,0 +1,25 @@
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# 学習成果物は最終モデルと評価レポートだけリポジトリに含める
+runs/*
+!runs/exp1/
+runs/exp1/*
+!runs/exp1/report.md
+!runs/exp1/report.json
+!runs/exp2/
+runs/exp2/*
+!runs/exp2/latest.pt
+!runs/exp2/report.md
+!runs/exp2/report.json
+!runs/exp3/
+runs/exp3/*
+!runs/exp3/report.md
+!runs/exp3/report.json
+!runs/exp4/
+runs/exp4/*
+!runs/exp4/latest.pt
+!runs/exp4/report.md
+!runs/exp4/report.json

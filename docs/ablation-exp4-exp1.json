@@ -1,0 +1,11 @@
+{
+  "run_a": "runs/exp4",
+  "run_b": "runs/exp1",
+  "n_deals": 80000,
+  "a_mean_loss": 11.44315,
+  "b_mean_loss": 11.9403125,
+  "diff_a_minus_b": -0.4971625,
+  "ci_low": -0.5593940625,
+  "ci_high": -0.434875,
+  "a_win_rate": 0.520925
+}

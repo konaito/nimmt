@@ -1,0 +1,113 @@
+{
+  "checkpoint": "latest.pt",
+  "baselines_4p": [
+    {
+      "opponent": "random",
+      "neural_mean_loss": 5.7431375,
+      "opp_mean_loss": 15.757770833333334,
+      "diff": -10.014633333333334,
+      "ci_low": -10.066742395833332,
+      "ci_high": -9.96346625,
+      "neural_win_rate": 0.602001041666667,
+      "n_deals": 80000
+    },
+    {
+      "opponent": "greedy",
+      "neural_mean_loss": 9.8751,
+      "opp_mean_loss": 13.571458333333334,
+      "diff": -3.6963583333333334,
+      "ci_low": -3.7630090624999997,
+      "ci_high": -3.6300271875000005,
+      "neural_win_rate": 0.3425999999999993,
+      "n_deals": 80000
+    },
+    {
+      "opponent": "heuristic",
+      "neural_mean_loss": 9.8083875,
+      "opp_mean_loss": 13.1023125,
+      "diff": -3.293925,
+      "ci_low": -3.3589557291666674,
+      "ci_high": -3.2270302083333333,
+      "neural_win_rate": 0.3377781249999994,
+      "n_deals": 80000
+    },
+    {
+      "opponent": "mc-rollout",
+      "neural_mean_loss": 10.063125,
+      "opp_mean_loss": 12.457645833333334,
+      "diff": -2.394520833333333,
+      "ci_low": -2.5454796875000003,
+      "ci_high": -2.2437484375,
+      "neural_win_rate": 0.331125,
+      "n_deals": 16000
+    }
+  ],
+  "baselines_2p": [
+    {
+      "opponent": "random",
+      "neural_mean_loss": 5.520375,
+      "opp_mean_loss": 13.63335,
+      "diff": -8.112975,
+      "ci_low": -8.206526875,
+      "ci_high": -8.0196475,
+      "neural_win_rate": 0.8075375,
+      "n_deals": 40000
+    },
+    {
+      "opponent": "greedy",
+      "neural_mean_loss": 8.17775,
+      "opp_mean_loss": 10.271725,
+      "diff": -2.093975,
+      "ci_low": -2.197050625,
+      "ci_high": -1.9923712500000001,
+      "neural_win_rate": 0.5890125,
+      "n_deals": 40000
+    },
+    {
+      "opponent": "heuristic",
+      "neural_mean_loss": 8.1316,
+      "opp_mean_loss": 9.686525,
+      "diff": -1.554925,
+      "ci_low": -1.6540275,
+      "ci_high": -1.4568987500000001,
+      "neural_win_rate": 0.5708125,
+      "n_deals": 40000
+    },
+    {
+      "opponent": "mc-rollout",
+      "neural_mean_loss": 8.371,
+      "opp_mean_loss": 7.045,
+      "diff": 1.326,
+      "ci_low": 1.13575,
+      "ci_high": 1.5156281249999999,
+      "neural_win_rate": 0.4475,
+      "n_deals": 8000
+    }
+  ],
+  "elo": {
+    "names": [
+      "ckpt_000100",
+      "ckpt_000400",
+      "ckpt_000700",
+      "ckpt_001100",
+      "ckpt_001400",
+      "ckpt_001700",
+      "ckpt_002000",
+      "ckpt_002400",
+      "ckpt_002700",
+      "ckpt_003000"
+    ],
+    "ratings": [
+      -2.9964386426249283,
+      -1.1811801501803338,
+      0.36477476990216257,
+      1.1464390279100276,
+      -2.2407905351369406,
+      -2.5013560917264344,
+      -0.16501731128829342,
+      2.4058147987698377,
+      1.962856434524715,
+      3.204897699850188
+    ]
+  }
+}

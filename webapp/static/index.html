@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>6 Nimmt! — vs 強化学習AI</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,300..800&family=Zen+Kaku+Gothic+New:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+<div id="start" class="overlay">
+  <div class="start-card">
+    <p class="start-kicker">strongest-model: exp4 / exp2</p>
+    <h1 class="start-title">6 <span>Nimmt!</span></h1>
+    <p class="start-sub">ニムト — 強化学習AIと66点マッチ</p>
+    <div class="start-buttons">
+      <button class="btn-mode" data-players="2">
+        <span class="mode-n">1<i>vs</i>1</span>
+        <span class="mode-d">2人戦 · exp2</span>
+      </button>
+      <button class="btn-mode" data-players="4">
+        <span class="mode-n">1<i>vs</i>3</span>
+        <span class="mode-d">4人戦 · exp4（最強）</span>
+      </button>
+    </div>
+    <p class="start-rule">累積66牛頭に達した人が出たらマッチ終了。最少失点の勝ち。</p>
+  </div>
+</div>
+
+<main id="game" hidden>
+  <header id="topbar">
+    <div class="brand">6 Nimmt!</div>
+    <div id="deal-label">DEAL 1 · TURN 1/10</div>
+    <div id="scores"></div>
+  </header>
+
+  <section id="table">
+    <div id="rows"></div>
+    <div id="reveal-strip"></div>
+  </section>
+
+  <section id="handzone">
+    <div id="hint">出すカードを選んで</div>
+    <div id="hand"></div>
+  </section>
+</main>
+
+<div id="rowpick" class="overlay" hidden>
+  <div class="dialog">
+    <h2>どの行を引き取る？</h2>
+    <p id="rowpick-msg"></p>
+    <div id="rowpick-buttons"></div>
+  </div>
+</div>
+
+<div id="result" class="overlay" hidden>
+  <div class="dialog">
+    <h2 id="result-title"></h2>
+    <div id="result-body"></div>
+    <button id="result-next" class="btn-primary"></button>
+  </div>
+</div>
+
+<script src="/static/app.js"></script>
+</body>
+</html>
