@@ -24,6 +24,10 @@
 
 ## 遊ぶ
 
+**ブラウザですぐ遊ぶ（インストール不要）**: https://konaito.github.io/nimmt/
+
+ローカルで動かす場合:
+
 ```bash
 uv sync --group web
 uv run --group web uvicorn webapp.server:app --port 8765
