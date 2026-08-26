@@ -1,0 +1,14 @@
+{
+  "opponent_prefix": "Alpha0.5",
+  "alpha_champion": "Alpha0.5_0_0_1_0_0_0_0",
+  "alpha_elo_in_tournament": 1862,
+  "mc_max": 800,
+  "n_deals": 150,
+  "seatings": 2,
+  "exp4_mean_loss": 10.146666666666667,
+  "alpha_mean_loss": 12.065,
+  "diff_exp4_minus_alpha": -1.9183333333333332,
+  "ci_low": -2.8,
+  "ci_high": -1.0233333333333334,
+  "exp4_deal_win_rate": 0.6333333333333333
+}
