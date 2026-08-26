@@ -22,6 +22,11 @@
 先読みなしの1回のforward（約24万パラメータのMLP、931KB）でこの数字。
 詳細は [docs/results.md](docs/results.md)。
 
+先行研究 [johannbrehmer/rl-6-nimmt](https://github.com/johannbrehmer/rl-6-nimmt) の
+AlphaZero風MCTS（Alpha0.5, 800プレイアウト/手）とも相手の環境で直接対戦し、
+差 -1.92牛頭/ディール（95%CI [-2.80, -1.02]）で有意勝ち。方法と全数字は
+[docs/vs-alpha05.md](docs/vs-alpha05.md)。
+
 ## 遊ぶ
 
 **ブラウザですぐ遊ぶ（インストール不要）**: https://konaito.github.io/nimmt/

@@ -1,0 +1,14 @@
+{
+  "opponent_prefix": "MCS",
+  "alpha_champion": "MCS_0_0_0_1_0_0_0",
+  "alpha_elo_in_tournament": 1930,
+  "mc_max": 800,
+  "n_deals": 150,
+  "seatings": 2,
+  "exp4_mean_loss": 10.275,
+  "alpha_mean_loss": 12.201666666666666,
+  "diff_exp4_minus_alpha": -1.9266666666666667,
+  "ci_low": -2.763333333333333,
+  "ci_high": -1.085,
+  "exp4_deal_win_rate": 0.62
+}
