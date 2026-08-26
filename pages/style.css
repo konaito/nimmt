@@ -283,3 +283,16 @@ body {
 .btn-repo:hover { transform: translateY(-2px); box-shadow: 0 4px 0 var(--ink); }
 .btn-repo b { font-family: var(--font-num); font-weight: 800; }
 .start-credit { margin-top: 18px; font-size: 11px; color: var(--ink-soft); opacity: .75; }
+
+/* ---------- ask AI ---------- */
+.ask-ai { margin-top: 30px; }
+.ask-ai-t { font-size: 12.5px; color: var(--ink-soft); margin-bottom: 10px; }
+.ask-ai-btns { display: flex; gap: 10px; justify-content: center; flex-wrap: wrap; }
+.btn-ai {
+  font-family: var(--font-num); font-weight: 700; font-size: 13px;
+  color: var(--ink); text-decoration: none;
+  padding: 8px 18px; border: 1px solid var(--line); border-radius: 999px;
+  background: var(--card-face);
+  transition: border-color .12s, transform .12s;
+}
+.btn-ai:hover { border-color: var(--ink); transform: translateY(-2px); }
