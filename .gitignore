@@ -23,3 +23,12 @@ runs/exp4/*
 !runs/exp4/latest.pt
 !runs/exp4/report.md
 !runs/exp4/report.json
+!runs/exp5/
+runs/exp5/*
+!runs/exp5/report.md
+!runs/exp5/report.json
+!runs/exp6/
+runs/exp6/*
+!runs/exp6/latest.pt
+!runs/exp6/report.md
+!runs/exp6/report.json

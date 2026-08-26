@@ -100,5 +100,5 @@ def golden(net4, net2, n_cases=30, seed=7):
 
 
 net4 = export_net("exp4", "runs/exp4/latest.pt")
-net2 = export_net("exp2", "runs/exp2/latest.pt")
+net2 = export_net("exp2", "runs/exp6/latest.pt")   # 2人戦モデルの実体は exp6（web側の名前は据え置き）
 golden(net4, net2)
