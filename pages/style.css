@@ -252,3 +252,13 @@ body {
   .card .num { font-size: 24px; }
   #scores { gap: 8px; } .score { min-width: 100px; }
 }
+
+/* ---------- start: about ---------- */
+.start-about {
+  margin-top: 34px; max-width: 560px; margin-left: auto; margin-right: auto;
+  font-size: 12.5px; line-height: 1.75; color: var(--ink-soft); text-align: center;
+}
+.start-about p + p { margin-top: 8px; }
+.start-about a { color: var(--accent-deep); font-weight: 700; text-decoration: none; border-bottom: 1px solid currentColor; }
+.start-about a:hover { opacity: .8; }
+.start-credit { font-size: 11px; opacity: .75; }
