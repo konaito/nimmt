@@ -25,6 +25,8 @@ def main(argv=None) -> int:
     p.add_argument("--run-b", required=True)
     p.add_argument("--checkpoint", default="latest.pt")
     p.add_argument("--deals", type=int, default=20000)
+    p.add_argument("--players", type=int, default=4, choices=(2, 4),
+                   help="4なら[A,B,A,B]、2なら[A,B]の交互着席")
     p.add_argument("--device", default="cpu")
     p.add_argument("--out", default="docs/ablation.json")
     args = p.parse_args(argv)
@@ -32,11 +34,13 @@ def main(argv=None) -> int:
     net_a = load(Path(args.run_a) / args.checkpoint, device=args.device)
     net_b = load(Path(args.run_b) / args.checkpoint, device=args.device)
     decks = new_decks(args.deals, np.random.default_rng(EVAL_SEED))
-    bots = [NeuralBot(net_a, device=args.device), NeuralBot(net_b, device=args.device),
-            NeuralBot(net_a, device=args.device), NeuralBot(net_b, device=args.device)]
+    bots = []
+    for i in range(args.players):
+        net = net_a if i % 2 == 0 else net_b
+        bots.append(NeuralBot(net, device=args.device))
     pd = run_match(bots, decks).astype(np.float64)
-    a = (pd[:, 0] + pd[:, 2]) / 2.0
-    b = (pd[:, 1] + pd[:, 3]) / 2.0
+    a = pd[:, 0::2].mean(axis=1)
+    b = pd[:, 1::2].mean(axis=1)
     diff, lo, hi = _boot_ci(a - b, n_boot=10000, seed=0)
     result = {
         "run_a": args.run_a, "run_b": args.run_b, "n_deals": int(pd.shape[0]),

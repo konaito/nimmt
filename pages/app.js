@@ -133,6 +133,9 @@ function flyClone(fromEl, toRect, ms = 500) {
   clone.style.top = `${from.top}px`;
   clone.style.width = `${from.width}px`;
   clone.style.height = `${from.height}px`;
+  // body 直下に置くと --cw/--ch が #game の計算値から外れて中身の字だけ拡大するので固定する
+  clone.style.setProperty("--cw", `${from.width}px`);
+  clone.style.setProperty("--ch", `${from.height}px`);
   document.body.appendChild(clone);
   requestAnimationFrame(() => {
     const dx = toRect.left - from.left + (toRect.width - from.width) / 2;
